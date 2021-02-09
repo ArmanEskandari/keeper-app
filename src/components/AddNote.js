@@ -17,6 +17,8 @@ const Addnote = () => {
   const addToNotes = (e) => {
     e.preventDefault();
     setNotes((prevNotes) => [...prevNotes, { title, content }]);
+    setContent("");
+    setTitle("");
   };
 
   return (
